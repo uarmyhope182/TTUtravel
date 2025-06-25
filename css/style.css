@@ -1,0 +1,456 @@
+:root {
+  --primary: #e7831f;
+  --bg: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+  /* min-height: 2000px; */
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: transparent;
+  border-bottom: 0.1rem solid #83776c;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: white; /* warna awal teks */
+}
+
+.navbar a {
+  color: white; /* awal: putih */
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: white; /* saat scroll */
+  color: #1a1a1a; /* teks jadi gelap */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled a {
+  color: #1a1a1a; /* link juga jadi gelap */
+}
+
+/* Logo Styling */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.navbar-logo span {
+  color: #d8710b;
+}
+
+.navbar-logo img {
+  height: 40px;
+  width: auto;
+  border-radius: 100%; /* Bikin lebih smooth */
+  background-color: rgb(
+    44,
+    158,
+    211
+  ); /* Jika logo transparan, ini bikin lebih jelas */
+  padding: 5px;
+}
+
+/* Link Menu Navbar */
+.navbar-nav a {
+  color: #0f4cc5;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo span {
+  color: #f5891c; /* Warna oranye keemasan */
+  font-style: italic;
+}
+
+/* Navigasi */
+.navbar-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-nav a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-nav a:hover {
+  color: #e0853a;
+}
+
+/* Icon tambahan */
+.navbar-extra a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-extra a:hover {
+  color: #e0853a;
+}
+
+/* Hamburger menu untuk tampilan mobile */
+#hamburger-menu {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(rgba(44, 122, 123, 0.4), rgba(44, 122, 123, 0.2)),
+    url("../gambar/as.jpeg") center/cover no-repeat;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Style teks utama */
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #e0853a; /* Warna oranye keemasan */
+}
+
+/* Style paragraf */
+.hero p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin-bottom: 50px;
+  opacity: 2.5;
+}
+
+/* Gallery Section */
+.gallery {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.gallery h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #2c7a7b;
+}
+
+.gallery h2 span {
+  color: #e0853a;
+}
+
+/* Container gallery */
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Style untuk setiap figure */
+.gallery-container figure {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background: #eeeded;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efek hover */
+.gallery-container figure:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Style untuk gambar */
+.gallery-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Caption */
+.gallery-container figcaption {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2e2b2b;
+}
+
+
+
+/* About Section */
+.about {
+  background: linear-gradient(135deg, #fff, #fff);
+  color: #0e0d0d;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #e0853a;
+}
+
+.about p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Blog Section */
+.blog {
+  background: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.blog h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e0853a;
+  margin-bottom: 20px;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.blog-post {
+  background: rgb(202, 201, 201);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.blog-post h3 {
+  font-size: 1.5rem;
+  color: #524e4c;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #3a3a39;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+  color: #e0853a;
+}
+
+/* Efek Hover */
+.blog-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Section */
+.contact {
+  background-image: url("../gambar/tuamese.jpeg"); /* ganti path gambar */
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.contact-content {
+  background-color: rgba(0, 0, 0, 0.4); /* semi transparan */
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  border-radius: 16px;
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.contact p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.social-links {
+  margin-top: 30px;
+}
+
+.social-links h3 {
+  font-size: 18px;
+  color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.social-links ul {
+  display: flex; /* ganti grid dengan flex agar ikon bisa lebih rapat */
+  flex-wrap: wrap; /* agar tetap responsif di layar kecil */
+  gap: 8px; /* jarak antar item, bisa disesuaikan */
+  justify-content: center; /* posisi tengah */
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.social-links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.social-links a {
+  color: #ccc;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-links i {
+  font-size: 18px;
+}
+
+.social-links li:hover {
+  transform: scale(1.05);
+}
+
+/* Hover efek brand color */
+.social-links a.facebook:hover {
+  color: #1877f2;
+}
+.social-links a.instagram:hover {
+  color: #e1306c;
+}
+.social-links a.tiktok:hover {
+  color: #000000;
+}
+.social-links a.whatsapp:hover {
+  color: #25d366;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%; /* disembunyikan dulu */
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: right 0.3s ease;
+    flex-direction: column;
+    padding-top: 2rem;
+
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0; /* tampil saat aktif */
+  }
+
+  .navbar .navbar-nav a {
+  color: #333; /* warna teks awal */
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #e0853a; /* ganti dengan warna yang kamu inginkan saat hover */
+}
+
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
