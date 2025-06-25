@@ -1,0 +1,227 @@
+<!-- detail1.html -->
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Wisata - ALAM</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      .detail {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .detail h2 {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #2c3e50;
+      }
+
+      .main-image {
+        width: 70%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+        display: block;
+        margin: 0 auto 20px;
+      }
+
+      .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .image-gallery img {
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .image-gallery img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .detail p {
+        font-size: 1.1em;
+        line-height: 1.7;
+        margin-bottom: 15px;
+        text-align: justify;
+      }
+
+      .detail ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      .btn-maps {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #007bff;
+        color: white;
+        padding: 12px 20px;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+        font-size: 1em;
+      }
+
+      .btn-maps:hover {
+        background-color: #0056b3;
+      }
+
+      @media (max-width: 900px) {
+        .detail {
+          margin: 30px 20px;
+          padding: 18px;
+        }
+
+        .detail h2 {
+          font-size: 1.8em;
+        }
+
+        .detail p {
+          font-size: 1.05em;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .detail {
+          margin: 20px 10px;
+          padding: 15px;
+        }
+
+        .detail h2 {
+          font-size: 1.5em;
+        }
+
+        .detail p {
+          font-size: 1em;
+        }
+
+        .btn-maps {
+          width: 100%;
+          justify-content: center;
+          font-size: 1em;
+          padding: 10px 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Gunung Mutis -->
+    <section class="detail">
+      <h2>Gunung Mutis</h2>
+      <img id="mainImage" src="gambar/mutis3.jpg" alt="Gunung Mutis" class="main-image" />
+      <div class="image-gallery">
+        <img src="gambar/bonsai-hutan-mutis.jpg" alt="Bonsai Hutan Mutis" />
+        <img src="gambar/ttt.jpg" alt="Padang Savana" />
+        <img src="gambar/aamutis.jpg" alt="Puncak Gunung Mutis" />
+      </div>
+
+      <p><strong>Deskripsi:</strong> Gunung Mutis merupakan gunung tertinggi di Pulau Timor (±2.458 mdpl) yang terletak di perbatasan TTU & TTS, Nusa Tenggara Timur. Gunung ini menawarkan panorama alam yang menakjubkan, dengan padang savana yang luas, hutan bonsai ampupu, serta pemandangan awan bergulung dari puncak.</p>
+
+      <p><strong>Daya Tarik:</strong></p>
+      <ul>
+        <li>Padang savana “Padang Teletubbies”</li>
+        <li>Hutan bonsai ampupu yang eksotis</li>
+        <li>Pemandangan sunrise dan sunset yang memukau</li>
+        <li>View laut Timor dan kabupaten sekitar</li>
+        <li>Cocok untuk trekking, camping, dan fotografi</li>
+      </ul>
+
+      <a href="https://www.google.com/maps?q=Puncak+Gunung+Mutis" target="_blank" class="btn-maps">
+        Buka di Google Maps
+      </a>
+    </section>
+
+    <!-- Mata Air Oeluan -->
+    <section class="detail">
+      <h2>Mata Air Oeluan</h2>
+      <img id="mainImage" src="gambar/oeluan1.webp" alt="Mata Air Oeluan" class="main-image" />
+      <div class="image-gallery">
+        <img src="gambar/oeluan.jpeg" alt="Kolam Alami Oeluan" />
+        <img src="gambar/oeluan2.jpeg" alt="Air Jernih Oeluan" />
+        <img src="gambar/hutanoe.jpg" alt="Hutan Sekitar Oeluan" />
+      </div>
+
+      <p><strong>Lokasi:</strong> Kecamatan Miomaffo Timur, Kabupaten TTU, Nusa Tenggara Timur</p>
+
+      <p><strong>Deskripsi:</strong> Mata Air Oeluan adalah destinasi yang menawarkan suasana sejuk dengan air jernih alami yang mengalir dari hutan. Tempat ini sangat cocok untuk rekreasi keluarga, bermain air, dan menikmati ketenangan di bawah pepohonan rindang.</p>
+
+      <p><strong>Daya Tarik:</strong></p>
+      <ul>
+        <li>Kolam alami dari mata air</li>
+        <li>Dikelilingi hutan yang sejuk</li>
+        <li>Cocok untuk piknik dan berenang</li>
+      </ul>
+
+      <a href="https://www.google.com/maps?q=Wisata+Hutan+Oeluan" target="_blank" class="btn-maps">
+        Buka di Google Maps
+      </a>
+    </section>
+
+    <!-- Bukit Tuamese -->
+    <section class="detail">
+      <h2>Bukit Tuamese</h2>
+      <img id="mainImage" src="gambar/tuamese.jpeg" alt="Bukit Tuamese" class="main-image" />
+      <div class="image-gallery">
+        <img src="gambar/ttumese.webp" alt="Pemandangan Tuamese" />
+        <img src="gambar/ttu2.webp" alt="Perbukitan Hijau" />
+        <img src="gambar/bbtuamese.jpg" alt="Danau Kecil Tuamese" />
+      </div>
+
+      <p><strong>Lokasi:</strong> Kecamatan Miomaffo Barat, Kabupaten TTU, Nusa Tenggara Timur</p>
+
+      <p><strong>Deskripsi:</strong> Bukit Tuamese menawarkan pemandangan perbukitan hijau dengan aliran sungai yang membentuk danau kecil saat musim hujan. Tempat ini sangat instagramable dan cocok untuk trekking ringan sambil menikmati sunrise atau sunset.</p>
+
+      <p><strong>Daya Tarik:</strong></p>
+      <ul>
+        <li>Bukit hijau dengan lanskap unik</li>
+        <li>Spot foto alami dan sunset memukau</li>
+        <li>Suasana sejuk dan segar</li>
+      </ul>
+
+      <a href="https://www.google.com/maps?q=Bukit+Tuamese" target="_blank" class="btn-maps">
+        Buka di Google Maps
+      </a>
+    </section>
+
+    <script>
+      const detailSections = document.querySelectorAll(".detail");
+      detailSections.forEach((section) => {
+        const mainImage = section.querySelector(".main-image");
+        const galleryImages = section.querySelectorAll(".image-gallery img");
+
+        galleryImages.forEach((image) => {
+          image.addEventListener("click", () => {
+            mainImage.src = image.src;
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

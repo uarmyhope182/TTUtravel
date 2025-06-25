@@ -1,0 +1,224 @@
+<!-- detail1.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Wisata - ROHANI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      .detail {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .detail h2 {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #2c3e50;
+      }
+
+      /* Gambar utama */
+      .main-image {
+        width: 70%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+        display: block;
+        margin: 0 auto 20px;
+      }
+
+      /* Galeri gambar tambahan */
+      .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .image-gallery img {
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .image-gallery img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .detail p {
+        font-size: 1.2em;
+        line-height: 1.7;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+      .btn-maps {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #007bff;
+        color: white;
+        padding: 12px 20px;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+        font-size: 1em;
+      }
+
+      .btn-maps img {
+        width: 20px;
+        height: 20px;
+      }
+
+      .btn-maps:hover {
+        background-color: #0056b3;
+      }
+
+      @media (max-width: 900px) {
+        .detail {
+          margin: 30px 20px;
+          padding: 18px;
+        }
+
+        .detail h2 {
+          font-size: 1.8em;
+        }
+
+        .detail p {
+          font-size: 1.1em;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .detail {
+          margin: 20px 10px;
+          padding: 15px;
+        }
+
+        .detail h2 {
+          font-size: 1.5em;
+        }
+
+        .detail p {
+          font-size: 1em;
+        }
+
+        .btn-maps {
+          width: 100%;
+          justify-content: center;
+          font-size: 1em;
+          padding: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="detail">
+      <h2>Goa St Maria Bitauni</h2>
+      <!-- Tambahkan ID untuk gambar utama -->
+      <img
+        id="mainImage"
+        src="gambar/goa St. Maria.jpg"
+        alt="Goa St Maria Bitauni"
+        class="main-image"
+      />
+
+      <!-- Galeri gambar kecil -->
+      <div class="image-gallery">
+        <img src="gambar/gua bitauni3.jpg" alt="Goa St Maria Bitauni" />
+        <img src="gambar/sive.jpg" alt="Goa St Maria Bitauni" />
+        <img src="gambar/rohani.webp" alt="Goa St Maria Bitauni" />
+      </div>
+
+      <p>
+        Goa St Maria Bitauni merupakan salah satu tempat ziarah rohani yang
+        populer di TTU. Tempat ini menyuguhkan suasana sejuk dan penuh
+        ketenangan, sangat cocok untuk refleksi dan ibadah umat Katolik,
+        sekaligus menarik bagi wisatawan yang mencintai sejarah dan budaya
+        lokal.
+      </p>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Goa+St+Maria+Bitauni"
+        target="_blank"
+        class="btn-maps"
+      >
+        Buka di Google Maps
+      </a>
+    </section>
+
+    <section class="detail">
+      <h2>Taman Sasi</h2>
+      <!-- Tambahkan ID untuk gambar utama -->
+      <img
+        id="mainImage"
+        src="gambar/sasi.webp"
+        alt="Patung Bunda Maria"
+        class="main-image"
+      />
+
+      <!-- Galeri gambar kecil -->
+      <div class="image-gallery">
+        <img src="gambar/tamansasi.jpg" alt="Goa St Maria Bitauni" />
+        <img src="gambar/gerejasasi1.jpg" alt="Goa St Maria Bitauni" />
+        <img src="gambar/gerejasasi.jpg" alt="Goa St Maria Bitauni" />
+      </div>
+
+      <p>
+        Goa St Maria Bitauni merupakan salah satu tempat ziarah rohani yang
+        populer di TTU. Tempat ini menyuguhkan suasana sejuk dan penuh
+        ketenangan, sangat cocok untuk refleksi dan ibadah umat Katolik,
+        sekaligus menarik bagi wisatawan yang mencintai sejarah dan budaya
+        lokal.
+      </p>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Gereja+Katolik+St.+Antonius+Padua+Paroki+Sasi"
+        target="_blank"
+        class="btn-maps"
+      >
+        Buka di Google Maps
+      </a>
+    </section>
+
+    <script>
+      // Ambil semua section detail
+      const detailSections = document.querySelectorAll(".detail");
+
+      detailSections.forEach((section) => {
+        // Ambil gambar utama dalam section ini
+        const mainImage = section.querySelector(".main-image");
+
+        // Ambil semua gambar kecil dalam section ini
+        const galleryImages = section.querySelectorAll(".image-gallery img");
+
+        // Tambahkan event klik untuk gambar kecil dalam section ini
+        galleryImages.forEach((image) => {
+          image.addEventListener("click", () => {
+            mainImage.src = image.src;
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
